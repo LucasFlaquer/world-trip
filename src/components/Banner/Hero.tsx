@@ -1,4 +1,5 @@
-import { Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Flex, Image, Text } from "@chakra-ui/react";
+import { DefaultHeader } from "../Headings/DefaultHeader";
 
 export function Hero() {
   return (
@@ -12,20 +13,20 @@ export function Hero() {
       <Flex
         justifyContent="flex-end"
         flexDirection="column"
-        flexBasis="45%"
+        flexBasis="50%"
         pl="36"
         pb="16"
         color="white"
       >
-        <Heading
-          color="inherit"
-          fontWeight="medium"
-        >
+        <DefaultHeader color="inherit" fontSize="36" >
           5 Continentes,
-             <br />
-            infinitas possibilidades
-          </Heading>
-        <Text color="inherit">Chegou a hora de tirar do papel a viagem que você sempre sonhou. </Text>
+          <br />
+            infinitas possibilidades.
+        </DefaultHeader>
+
+        <Text color="inherit" mt="8" fontSize="18">
+          Chegou a hora de tirar do papel a viagem que você sempre sonhou.
+        </Text>
       </Flex>
       <Image
         src="/assets/Airplane.svg"
@@ -34,6 +35,6 @@ export function Hero() {
         bottom="-30px"
         rotate="-3deg"
       />
-    </Flex>
+    </Flex >
   )
 }
