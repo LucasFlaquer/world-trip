@@ -1,5 +1,4 @@
-import { Image } from "@chakra-ui/image";
-import { Box, Container, Divider, Flex, Text } from "@chakra-ui/layout";
+import { Container, Divider, Flex } from "@chakra-ui/react";
 import { TravelType } from "./TravelType";
 
 export function TravelTypes() {
@@ -12,7 +11,7 @@ export function TravelTypes() {
         <TravelType imageUrl="/assets/museum.svg" text="clássico" />
         <TravelType imageUrl="/assets/earth.svg" text="e mais..." />
       </Flex>
-      <Divider orientation="horizontal" borderBottomWidth="3px" w={24} />
+      <Divider orientation="horizontal" borderBottomWidth="3px" w={24} mx="auto" />
     </Container>
   )
 }
