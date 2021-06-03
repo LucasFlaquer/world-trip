@@ -18,7 +18,7 @@ export function Hero() {
         pb="16"
         color="white"
       >
-        <DefaultHeader color="inherit" fontSize="36" >
+        <DefaultHeader color="inherit" fontSize="36">
           5 Continentes,
           <br />
             infinitas possibilidades.
